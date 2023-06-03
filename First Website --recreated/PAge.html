@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+}
+
+
+/* TYPOGRAPHY */
+
+h1{
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span{
+    color: #b732fb;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+
+/* Layout */
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 980px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.column{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.col-bg{
+    background: #212614;
+    padding: 0.5em;
+    color: white;
+}
+
+.col-1{
+  width: 20%;
+}
+
+.col-2{
+    width: 45%;
+}
+
+.col-3{
+    width: 70%;
+}
+
+@media (max-width: 600px){
+    .column{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lets Get Started By Being <span>More Fancy</span></h1>
+    <img src="./Images/Banner.png" alt="Banner">
+    <div class="column">
+      <div class="col col-1">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, tenetur.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste mollitia ex ratione unde? Deserunt quam voluptas blanditiis assumenda labore ducimus atque dolorum eaque, in quod sunt inventore illo saepe at aliquam hic minima fugit quisquam.</p>
+      </div>
+      <div class="col col-2">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, labore.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente amet mollitia consequatur vero reprehenderit voluptatem, cum natus beatae saepe voluptatibus. Ducimus totam maiores numquam nisi. Impedit id praesentium cupiditate repellendus illum quos obcaecati nostrum ullam.</p>
+      </div>
+      <div class="col col-1 col-bg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sapiente, temporibus eos doloribus esse voluptatem officiis eius, reiciendis dolorum non doloremque. Voluptate exercitationem accusamus quisquam.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="col col-3">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi deserunt at rem laborum itaque totam, repellendus recusandae, reiciendis, nostrum facere iste quae quia quis perferendis? Iure nam ut doloremque cum, dolore accusamus quia possimus iusto!</p>
+      </div>
+      <div class="col col-bg col-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nesciunt quia illum, quae ut quisquam corporis magni qui corrupti tempore!</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
